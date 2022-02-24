@@ -48,11 +48,15 @@ html header {
             #Line_3 {
                 fill: #000;
             }
+
+            &.svg-mobile {
+                display: none;
+            }
         }
     }
 
     nav>ul {
-        display: flex;
+        padding: 0;
 
         li {
             padding: 0 10px;
@@ -138,4 +142,28 @@ footer {
 
 }
 
-@media screen and (min-width: 480px) {}
+@media screen and (max-width: 798px) {
+
+    h1,
+    h2,
+    li {
+        font-size: 14px;
+    }
+
+    html {
+        header {
+            div svg {
+                &.svg-mobile {
+                    width: 120px;
+                    display: block;
+                }
+
+                &.svg-desktop {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {}

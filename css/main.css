@@ -45,8 +45,11 @@ html header div svg #Line_2,
 html header div svg #Line_3 {
   fill: #000;
 }
+html header div svg.svg-mobile {
+  display: none;
+}
 html header nav > ul {
-  display: flex;
+  padding: 0;
 }
 html header nav > ul li {
   padding: 0 10px;
@@ -107,6 +110,22 @@ footer ul li {
 .dark-mode .light-mode-btn,
 .dark-mode .dark-mode-btn {
   border-color: #fff;
+}
+
+@media screen and (max-width: 798px) {
+  h1,
+h2,
+li {
+    font-size: 14px;
+  }
+
+  html header div svg.svg-mobile {
+    width: 120px;
+    display: block;
+  }
+  html header div svg.svg-desktop {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
