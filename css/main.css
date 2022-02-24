@@ -56,15 +56,9 @@ html header .light-mode-btn {
   background: #fff;
   color: #000;
 }
-html header .light-mode-btn:hover {
-  color: #000;
-}
 html header .dark-mode-btn {
   border-width: 1px 1px 1px 0.5px;
   background: #000;
-  color: #fff;
-}
-html header .dark-mode-btn:hover {
   color: #fff;
 }
 html header .light-mode-btn,
