@@ -47,6 +47,7 @@ html header div svg #Line_3 {
 }
 html header div svg.svg-mobile {
   display: none;
+  width: 0;
 }
 html header nav > ul {
   padding: 0;
