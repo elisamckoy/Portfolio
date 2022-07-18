@@ -1,9 +1,9 @@
-main {
-  height: 1000px;
+.break {
+  display: none;
 }
 
 a {
-  color: #000;
+  color: #202124;
   transition: all 300ms ease 100ms;
 }
 a:hover {
@@ -15,63 +15,47 @@ a:hover {
   box-shadow: none;
 }
 
-h1,
-h2,
 li {
   font-size: 18px;
+}
+
+.sub-heading {
+  font-size: 14px;
+  margin-top: 0;
+  line-height: 1.3;
+}
+
+#logo {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.mode-svg {
+  margin-top: 7px;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
 }
 
 header,
 footer {
   padding: 0 30px;
-  height: 50px;
-  align-items: center;
-  position: relative;
   text-transform: uppercase;
   letter-spacing: 1.3px;
 }
 
-html header {
-  background-image: linear-gradient(#fff, rgba(255, 255, 255, 0));
+html header nav {
+  transform: rotate(90deg);
+  transform-origin: top left;
+  position: fixed;
+  right: -360px;
+  top: 0;
 }
-html header div #logo h1 {
-  margin-right: 20px;
-}
-html header div svg {
-  width: 250px;
-}
-html header div svg #Line_1,
-html header div svg #Line_2,
-html header div svg #Line_3 {
-  fill: #000;
-}
-html header div svg.svg-mobile {
-  display: none;
-  width: 0;
-}
-html header nav > ul {
+html header nav ul {
   padding: 0;
+  display: flex;
 }
-html header nav > ul li {
+html header nav ul li {
   padding: 0 10px;
-}
-html header .light-mode-btn {
-  border-width: 1px 0.5px 1px 1px;
-  background: #fff;
-  color: #000;
-}
-html header .dark-mode-btn {
-  border-width: 1px 1px 1px 0.5px;
-  background: #000;
-  color: #fff;
-}
-html header .light-mode-btn,
-html header .dark-mode-btn {
-  border-style: solid;
-  border-color: #000;
-  border-radius: 0;
-  font-size: 8px;
-  margin-bottom: 1px;
 }
 
 footer ul {
@@ -83,18 +67,13 @@ footer ul li {
 
 .dark-mode {
   color: #fff;
-  background-color: #000;
+  background-color: #202124;
 }
 .dark-mode header {
-  background-image: linear-gradient(#000, rgba(0, 0, 0, 0));
-}
-.dark-mode header div svg #Line_1,
-.dark-mode header div svg #Line_2,
-.dark-mode header div svg #Line_3 {
-  fill: #fff;
+  background-image: linear-gradient(#202124, rgba(0, 0, 0, 0));
 }
 .dark-mode body {
-  background-color: #000;
+  background-color: #202124;
 }
 .dark-mode body,
 .dark-mode h1,
@@ -105,27 +84,30 @@ footer ul li {
 .dark-mode a:hover {
   color: #E7684C;
 }
-.dark-mode .light-mode-btn {
-  color: #000;
-}
-.dark-mode .light-mode-btn,
-.dark-mode .dark-mode-btn {
-  border-color: #fff;
-}
 
-@media screen and (max-width: 798px) {
-  h1,
-h2,
-li {
-    font-size: 14px;
+@media screen and (max-width: 580px) {
+  .break {
+    display: unset;
   }
 
-  html header div svg.svg-mobile {
-    width: 120px;
-    display: block;
-  }
-  html header div svg.svg-desktop {
+  .slash {
     display: none;
+  }
+
+  .sub-heading {
+    font-size: 12px;
+  }
+
+  #logo {
+    font-size: 28px;
+  }
+
+  li {
+    font-size: 16px;
+  }
+
+  html header nav {
+    right: -340px;
   }
 }
 
