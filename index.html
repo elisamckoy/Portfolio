@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html ng-app='store'class="light-mode">
+<html ng-app='store' class="light-mode">
 	<head>
 		<meta charset="utf-8">
 		<title>Product Designer / Front-end Developer | Elisabeth McKoy</title>
-		<meta name="description" content="Product Designer / Front-end Developer creative portfolio for Elisabeth McKoy">
+		<meta name="description" content="Digital Product Designer / Front-end Developer creative portfolio for Elisabeth McKoy">
 		<meta http-equiv="content-language" content="en-gb">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,7 +62,46 @@
 			</nav>
 		</header>
 		<main>
-			
+			<div id="accordion">
+				<div class="card">
+				  	<div class="card-header" id="headingOne">
+						<h5 class="m-0 project-title">
+					  	<button class="btn btn-link text-left project-button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							<span class="project-title">Liberty</span><br>
+							<span class="project-role sub-heading">Digital Product Design | Front-end Development</span>
+						</button>
+						</h5>
+					</div>
+					<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+						<div class="card-body">
+							<p>Currently working as a Digital Product Designer / Front-End Developer for the iconic luxury department store, Liberty. My role includes carrying out end-to-end UX/UI design including user journeys, wireframes, prototype building, interaction design and development. As well as designing, maintaining and utilising company design system and components.</p>
+							<div class="project-img-container">
+								<img src="images/dark-mode-liberty-site.png" alt="Liberty Website" class="light-img img-fluid project-img">
+								<img src="images/light-mode-liberty-site.png" alt="Liberty Website" class="dark-img img-fluid project-img">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header" id="headingTwo">
+					  	<h5 class="m-0">
+							<button class="btn btn-link text-left project-button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+								<span class="project-title">Liberty Fabric</span><br>
+								<span class="project-role sub-heading">Digital Product Design | Front-end Development</span>
+						  	</button>
+					  	</h5>
+					</div>
+					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+						<div class="card-body">
+							<p>Currently working as a Digital Product Designer / Front-End Developer for the iconic luxury department store, Liberty. My role includes carrying out end-to-end UX/UI design including user journeys, wireframes, prototype building, interaction design and development. As well as designing, maintaining and utilising company design system and components.</p>
+							<div class="project-img-container">
+								<img src="images/dark-mode-liberty-fabric-site.png" alt="Liberty Fabric Website" class="light-img img-fluid project-img">
+								<img src="images/light-mode-liberty-fabric-site.png" alt="Liberty Fabric Website" class="dark-img img-fluid project-img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 		<footer class="d-flex fixed-bottom">
 			<div class="ml-auto">
@@ -74,5 +113,8 @@
 			</div>
 		</footer>
 		<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</body>
 </html>	
